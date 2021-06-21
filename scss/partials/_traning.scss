@@ -62,6 +62,7 @@
         &--title
         {
             padding: 1rem;
+            border-bottom: 0.1rem solid rgba($dark, 0.1);
             
         }
         &--btn{
@@ -91,13 +92,17 @@
         padding-bottom: 6rem;
     }
     &--price{
-        border-bottom: 0.1rem solid rgba($dark, 0.1);
+        
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
         img{
             width: 7%;
             height: 1%
+        }
+        p{
+            @include text;
+            font-size: 1.7rem;
         }
     }
     &--text{

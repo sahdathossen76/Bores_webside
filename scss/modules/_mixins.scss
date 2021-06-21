@@ -39,7 +39,7 @@
 }
 @mixin box-grid {
   display: grid;
-  @include mobile ($max-screen : 767px){
+  @include mobile ($max-screen : 768px){
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -48,9 +48,8 @@
   padding: 2rem;
   overflow: hidden;
   text-align: center;
-  background: $white;
-  box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
-  border: .1rem solid rgba($dark, .2);
-  border-radius: .5rem;
+  background: rgba($dark-gray, 0.9);
+  box-shadow: 0 0.5rem 1rem rgba($dark-gray, 0.1);
+  border: .1rem solid rgba($dark-gray, .2);
   cursor: pointer;
 }

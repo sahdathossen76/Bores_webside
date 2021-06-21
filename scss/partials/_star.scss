@@ -1,0 +1,41 @@
+.star{
+    background: #061414;
+    &__wrapper{
+    @include box-flex ($flx-wrp: nowrap);
+    justify-content: space-between;
+        gap: 1.5rem;
+    }
+    &__title{
+        @include sub-heading;
+        color: $white;
+    }
+    &__text{
+        @include text;
+        color: $white;
+    }
+    &__cards{
+        padding-top: 6rem;
+        @include box-grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include mobile ($max-screen : 768px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile ($max-screen : 347px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+        gap: 2.5rem;
+    }
+    &__card{
+        @include box;
+        &-number{
+            @include card-title;
+            color: $white;
+            padding: 3rem 0;
+            border-bottom: 0.1rem solid rgba($white, 0.1);
+        }
+        &-text{
+            @include text;
+            color: $white;
+        }
+    }
+}
