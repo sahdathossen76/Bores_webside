@@ -1,0 +1,56 @@
+@mixin heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: $fw-b;
+  font-family: $ff-ss;
+  line-height: 1.2;
+  color: rgba($dark, 0.9);
+  white-space: nowrap;
+}
+@mixin sub-heading {
+  font-size: 1.6rem;
+  font-weight: $fw-b;
+  font-family: $ff-ss;
+  line-height: 3rem;
+  color: $dark;
+}
+@mixin text {
+  font-size: 1.5rem;
+  font-weight: $ff-s;
+  font-family: $ff-ss;
+  line-height: 3rem;
+  color: $dark;
+}
+
+@mixin card-title {
+  font-size: 2rem;
+  font-weight: $fw-b;
+  font-family: $ff-ss;
+  line-height: 1.2;
+  color: rgba($dark, 0.9);
+  white-space: nowrap;
+}
+@mixin box-flex ($flx-wrp: wrap, $flx-direc: row){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: $flx-wrp;
+  flex-direction: $flx-direc;
+}
+@mixin box-grid {
+  display: grid;
+  @include mobile ($max-screen : 767px){
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@mixin box {
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+  text-align: center;
+  background: $white;
+  box-shadow: 0 0.5rem 1rem rgba($dark, 0.1);
+  border: .1rem solid rgba($dark, .2);
+  border-radius: .5rem;
+  cursor: pointer;
+}

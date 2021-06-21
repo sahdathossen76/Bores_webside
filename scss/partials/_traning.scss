@@ -1,0 +1,131 @@
+.traning{
+    background:  linear-gradient( rgba(#061414, 0.8)),url(/img/MaskGroup2.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    @include mobile ($max-screen : 321px){
+        padding-top: calc(+1%);
+    }
+    padding-top: calc(+20%);
+    margin-top: auto;
+    &__family{
+        position: absolute;
+        @include computer_lg ($min-screen: 970px){
+            top: -24%;
+        }
+        @include mobile ($max-screen: 970px){
+            top: -25%;
+        }
+        top: -35%;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: auto;
+        img{
+            width: 100%;
+            max-width: 120rem;
+            display: block;
+            margin: auto;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        margin-top: 10rem;
+        @include box-flex ($flx-wrp: nowrap);
+        gap: 1.5rem
+    }
+    &__title{
+        @include sub-heading;
+        color: rgba($white,  0.8);
+    }
+    &__text{
+        @include text;
+        color: rgba($white,  0.8);
+    }
+    &__table-wrapper{
+        @include box-grid;
+        margin-top: 10rem;
+        grid-template-columns: repeat(3, 1fr);
+        @include mobile ($max-screen : 768px){
+            grid-template-columns: repeat(1, 1fr);
+          }
+        position: relative;
+        gap: 1.5rem;
+        z-index: 1;
+    }
+    &__table{
+        position: relative;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        &--title
+        {
+            padding: 1rem;
+            
+        }
+        &--btn{
+            padding: 1rem;
+        }
+    }
+    &__btn{
+        a{
+            background: none;
+        }
+    }
+}
+.table{
+    &--type{
+        @include text;
+    }
+    &--title{
+        @include card-title;
+        white-space: pre-wrap;
+    }
+    &--date,&--price,&--btn-learn{
+        @include text;
+    }
+    &--date{
+        padding-bottom: 6rem;
+    }
+    &--price{
+        border-bottom: 0.1rem solid rgba($dark, 0.1);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        img{
+            width: 7%;
+            height: 1%
+        }
+    }
+    &--text{
+        @include text;
+    }
+    &--btn-learn{
+        display: block;
+    }
+    &--btn-wrapper{
+        margin-top: auto;
+        
+    }
+    &--btn{
+        white-space: pre-wrap;
+        width: 100%;
+    }
+}
+.traning__family{
+    @include mobile ($max-screen : 767px){
+        top: -12rem;
+    }
+    
+    position: absolute;
+    img{
+        width: 100%;
+        @include mobile ($max-screen : 767px){
+            max-width: 1200px;
+        }
+        
+    }
+}

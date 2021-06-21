@@ -1,0 +1,31 @@
+.service{
+    background: rgba($lime, 0.05);
+    &__title{
+        @include sub-heading;
+    }
+    &__text{
+        @include text;
+        width: 90%;
+        padding-bottom: 5rem;
+        
+    }
+    &__category{
+        @include box-grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+        .category{
+            &-img{
+                padding-bottom: 2rem
+            }
+            &-title{
+                @include card-title;
+            }
+            &-text{
+                @include text;
+            }
+            &-btn{
+                @include text;
+            }
+        }
+    }
+}

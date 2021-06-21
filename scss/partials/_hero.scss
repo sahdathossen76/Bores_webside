@@ -1,0 +1,40 @@
+.hero{
+    min-height: 100vh;
+    background: linear-gradient( rgba($dark, 0.3)),url(/img/header-bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .container{
+        @include box-grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    &__blank-area{
+        height: 55vh;
+        margin-top: auto;
+        grid-area: 1 / span 2;
+    }
+    &__text-area{
+        
+        h1{
+            @include heading;
+            font-size: 2.7rem;
+            @include mobile ($max-screen : 320px){
+                font-size: 2.1rem;
+            }
+            font-weight: $fw-n;
+            span{
+                display: block;
+                font-weight: $fw-b;
+                padding: 1rem 0;
+            }
+        }
+        p{
+            @include text;
+        }
+        h2,h1,p{
+            color: rgba($white, 0.9);
+            text-align: left;
+        }
+    }
+}
