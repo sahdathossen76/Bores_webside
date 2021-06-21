@@ -261,8 +261,8 @@ a {
 
 .hero {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.3))), url(/img/header-bgi.jpg);
-  background: linear-gradient(rgba(34, 33, 33, 0.3)), url(/img/header-bgi.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.3))), url(../img/header-bgi.jpg);
+  background: linear-gradient(rgba(34, 33, 33, 0.3)), url(../img/header-bgi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -457,8 +457,8 @@ a {
 }
 
 .traning {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 20, 20, 0.8))), url(/img/MaskGroup2.png) no-repeat;
-  background: linear-gradient(rgba(6, 20, 20, 0.8)), url(/img/MaskGroup2.png) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 20, 20, 0.8))), url(../img/MaskGroup2.png) no-repeat;
+  background: linear-gradient(rgba(6, 20, 20, 0.8)), url(../img/MaskGroup2.png) no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
