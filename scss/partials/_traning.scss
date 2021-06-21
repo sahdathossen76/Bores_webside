@@ -48,9 +48,6 @@
         @include box-grid;
         margin-top: 10rem;
         grid-template-columns: repeat(3, 1fr);
-        @include mobile ($max-screen : 768px){
-            grid-template-columns: repeat(1, 1fr);
-          }
         position: relative;
         gap: 1.5rem;
         z-index: 1;

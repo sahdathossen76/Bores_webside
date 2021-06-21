@@ -560,13 +560,6 @@ a {
   }
 }
 
-@media screen and (max-device-width: 768px) {
-  .traning__table-wrapper {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 .traning__table {
   position: relative;
   background: #FFFFFF;
