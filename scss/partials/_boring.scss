@@ -1,0 +1,42 @@
+.boring{
+    &__wrapper{
+        @include box-flex ($flx-wrp: nowrap);
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+    &__title{
+        @include sub-heading;
+    }
+    &__text{
+        @include text;
+    }
+    &__btn{
+        padding-right: 2%;
+        
+         a{
+             background: none;
+             color: rgba($dark,  0.8);
+             &::before{
+                background-image: url(../img/Group1191.png);
+            }
+         }
+     }
+     &__cards{
+         padding-top: 6rem;
+         @include box-grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1.5rem;
+     }
+     &__card{
+         img{
+             min-width: 100%
+         }
+         &-title{
+             @include card-title;
+             padding: 3rem 0;
+         }
+         &-text{
+            @include text;
+         }
+     }
+}

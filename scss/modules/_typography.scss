@@ -2,12 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap');
 /* put your font variable here*/
-$ff-s: 'Merriweather', serif;
+
 $ff-ss: 'Titillium Web', sans-serif;
 
 /* put your font width here*/
-$fw-n: 500;
-$fw-b: 700;
+$fw-n: 400;
+$fw-b: 600;
 
 /* mix your font here*/
 @mixin sans-serif($fs, $ls: .15em, $color: $dark, $tt: uppercase, $lh: 1) {

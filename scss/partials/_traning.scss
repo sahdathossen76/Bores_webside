@@ -33,7 +33,8 @@
         position: relative;
         margin-top: 10rem;
         @include box-flex ($flx-wrp: nowrap);
-        gap: 1.5rem
+        justify-content: space-between;
+        gap: 1.5rem;
     }
     &__title{
         @include sub-heading;
@@ -71,8 +72,10 @@
         }
     }
     &__btn{
+       padding-right: 2%;
         a{
             background: none;
+            
         }
     }
 }

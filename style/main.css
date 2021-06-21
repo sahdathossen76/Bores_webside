@@ -133,7 +133,7 @@ a {
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .btn::before {
@@ -293,13 +293,13 @@ a {
 .hero__text-area h1 {
   text-align: center;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 1.2;
   color: rgba(34, 33, 33, 0.9);
   white-space: nowrap;
   font-size: 2.7rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media screen and (max-device-width: 320px) {
@@ -310,13 +310,13 @@ a {
 
 .hero__text-area h1 span {
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   padding: 1rem 0;
 }
 
 .hero__text-area p {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -333,7 +333,7 @@ a {
 
 .service__title {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -341,7 +341,7 @@ a {
 
 .service__text {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -370,7 +370,7 @@ a {
 
 .service__category .category-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 1.2;
   color: rgba(34, 33, 33, 0.9);
@@ -379,7 +379,7 @@ a {
 
 .service__category .category-text {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -387,7 +387,7 @@ a {
 
 .service__category .category-btn {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -427,7 +427,7 @@ a {
 
 .approch__left--title {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -437,7 +437,7 @@ a {
 .approch__left--title span {
   display: block;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 3.7rem;
   padding: 1rem 0;
   margin-top: 1.5rem;
@@ -449,7 +449,7 @@ a {
 
 .approch__right p {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -518,12 +518,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 1.5rem;
 }
 
 .traning__title {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -532,7 +535,7 @@ a {
 
 .traning__text {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -589,13 +592,17 @@ a {
   padding: 1rem;
 }
 
+.traning__btn {
+  padding-right: 2%;
+}
+
 .traning__btn a {
   background: none;
 }
 
 .table--type {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -603,7 +610,7 @@ a {
 
 .table--title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 1.2;
   color: rgba(34, 33, 33, 0.9);
@@ -613,7 +620,7 @@ a {
 
 .table--date, .table--price, .table--btn-learn {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -642,7 +649,7 @@ a {
 
 .table--text {
   font-size: 1.5rem;
-  font-weight: "Merriweather", serif;
+  font-weight: 400;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
@@ -679,5 +686,94 @@ a {
   .traning__family img {
     max-width: 1200px;
   }
+}
+
+.boring__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.boring__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 3rem;
+  color: #222121;
+}
+
+.boring__text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 3rem;
+  color: #222121;
+}
+
+.boring__btn {
+  padding-right: 2%;
+}
+
+.boring__btn a {
+  background: none;
+  color: rgba(34, 33, 33, 0.8);
+}
+
+.boring__btn a::before {
+  background-image: url(../img/Group1191.png);
+}
+
+.boring__cards {
+  padding-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media screen and (max-device-width: 767px) {
+  .boring__cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.boring__card img {
+  min-width: 100%;
+}
+
+.boring__card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.2;
+  color: rgba(34, 33, 33, 0.9);
+  white-space: nowrap;
+  padding: 3rem 0;
+}
+
+.boring__card-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 3rem;
+  color: #222121;
 }
 /*# sourceMappingURL=main.css.map */
