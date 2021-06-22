@@ -16,6 +16,10 @@
          a{
              background: none;
              color: rgba($dark,  0.8);
+             &:hover,&:focus{
+                background: none;
+                color: rgba($dark,  0.8);
+            }
              &::before{
                 background-image: url(../img/Group1191.png);
             }

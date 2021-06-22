@@ -41,7 +41,7 @@ body{
   padding: 0 12%;
   @include mobile ($max-screen : 982px){
     padding: 0 6%;
-}
+  }
   margin: 0 auto;
 }
 .container-fluid {
@@ -105,7 +105,7 @@ a{
   position: absolute;
   top:0; right: 0;
   padding-right: 32%;
-  background-image: url(/img/Group765.png);
+  background-image: url(../img/Group765.png);
   background-repeat: no-repeat;
   background-position: center;
   width:0%;

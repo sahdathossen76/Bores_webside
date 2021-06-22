@@ -39,7 +39,7 @@
 }
 @mixin box-grid {
   display: grid;
-  @include mobile ($max-screen : 768px){
+  @include mobile ($max-screen : 767px){
     grid-template-columns: repeat(1, 1fr);
   }
 }
