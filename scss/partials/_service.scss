@@ -1,7 +1,13 @@
+
+/*---------------service Start---------------*/
 .service{
     background: rgba($lime, 0.05);
+
     &__title{
-        @include sub-heading;
+        @include heading-flex;
+        h1{
+            @include sub-heading;
+        }
     }
     &__text{
         @include text;

@@ -1,3 +1,4 @@
+/*---------------traning Start---------------*/
 .traning{
     background:  linear-gradient( rgba(#061414, 0.8)),url(../img/MaskGroup2.png) no-repeat;
     background-repeat: no-repeat;
@@ -37,8 +38,11 @@
         gap: 1.5rem;
     }
     &__title{
-        @include sub-heading;
-        color: rgba($white,  0.8);
+        @include heading-flex;
+        h1{
+            @include sub-heading;
+            color: rgba($white,  0.8);
+        }
     }
     &__text{
         @include text;

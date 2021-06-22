@@ -1,3 +1,4 @@
+/*---------------approch Start---------------*/
 .approch{
     margin-bottom: auto;
     padding-bottom: calc(+30%);
@@ -15,17 +16,19 @@
     }
     &__left{
         &--title{
-            @include sub-heading;
-            
-            gap: 1.5rem;
-            span{
-                display: block;
-                font-size: 3rem;
-                font-weight: $fw-b;
-                line-height: 3.7rem;
-                padding: 1rem 0;
-                margin-top: 1.5rem;
+            @include heading-flex;
+            h1{
+                @include sub-heading;
             }
+            
+        }
+        span{
+            display: block;
+            font-size: 3rem;
+            font-weight: $fw-b;
+            line-height: 3.7rem;
+            padding: 1rem 0;
+            margin-top: 1.5rem;
         }
     }
     &__right{

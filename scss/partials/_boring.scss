@@ -1,3 +1,4 @@
+/*---------------boring Start---------------*/
 .boring{
     &__wrapper{
         @include box-flex ($flx-wrp: nowrap);
@@ -5,7 +6,10 @@
         gap: 1.5rem;
     }
     &__title{
-        @include sub-heading;
+        @include heading-flex;
+        h1{
+            @include sub-heading;
+        }
     }
     &__text{
         @include text;

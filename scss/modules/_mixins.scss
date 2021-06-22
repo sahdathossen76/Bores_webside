@@ -13,6 +13,7 @@
   font-family: $ff-ss;
   line-height: 3rem;
   color: $dark;
+  text-transform: uppercase;
 }
 @mixin text {
   font-size: 1.5rem;
@@ -52,4 +53,10 @@
   box-shadow: 0 0.5rem 1rem rgba($dark-gray, 0.1);
   border: .1rem solid rgba($dark-gray, .2);
   cursor: pointer;
+}
+@mixin heading-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
 }

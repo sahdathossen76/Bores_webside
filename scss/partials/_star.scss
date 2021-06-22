@@ -1,3 +1,4 @@
+/*---------------star Start---------------*/
 .star{
     background: #061414;
     &__wrapper{
@@ -6,8 +7,11 @@
         gap: 1.5rem;
     }
     &__title{
-        @include sub-heading;
-        color: $white;
+        @include heading-flex;
+        h1{
+            @include sub-heading;
+            color: $white;
+        }
     }
     &__text{
         @include text;

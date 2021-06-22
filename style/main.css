@@ -259,6 +259,7 @@ a {
   }
 }
 
+/*---------------hero Start---------------*/
 .hero {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 33, 0.3))), url(../img/header-bgi.jpg);
@@ -327,16 +328,31 @@ a {
   text-align: left;
 }
 
+/*---------------service Start---------------*/
 .service {
   background: rgba(0, 204, 102, 0.05);
 }
 
 .service__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.service__title h1 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
+  text-transform: uppercase;
 }
 
 .service__text {
@@ -393,6 +409,7 @@ a {
   color: #222121;
 }
 
+/*---------------approch Start---------------*/
 .approch {
   margin-bottom: auto;
   padding-bottom: calc(+30%);
@@ -426,15 +443,28 @@ a {
 }
 
 .approch__left--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.approch__left--title h1 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
-  gap: 1.5rem;
+  text-transform: uppercase;
 }
 
-.approch__left--title span {
+.approch__left span {
   display: block;
   font-size: 3rem;
   font-weight: 600;
@@ -456,6 +486,7 @@ a {
   margin-bottom: 3rem;
 }
 
+/*---------------traning Start---------------*/
 .traning {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 20, 20, 0.8))), url(../img/MaskGroup2.png) no-repeat;
   background: linear-gradient(rgba(6, 20, 20, 0.8)), url(../img/MaskGroup2.png) no-repeat;
@@ -525,11 +556,25 @@ a {
 }
 
 .traning__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.traning__title h1 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -694,6 +739,7 @@ a {
   }
 }
 
+/*---------------boring Start---------------*/
 .boring__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,11 +763,25 @@ a {
 }
 
 .boring__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.boring__title h1 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
+  text-transform: uppercase;
 }
 
 .boring__text {
@@ -788,6 +848,7 @@ a {
   color: #222121;
 }
 
+/*---------------star Start---------------*/
 .star {
   background: #061414;
 }
@@ -815,11 +876,25 @@ a {
 }
 
 .star__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7rem;
+}
+
+.star__title h1 {
   font-size: 1.6rem;
   font-weight: 600;
   font-family: "Titillium Web", sans-serif;
   line-height: 3rem;
   color: #222121;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -895,6 +970,7 @@ a {
   color: #FFFFFF;
 }
 
+/*---------------footer Start---------------*/
 .footer {
   padding-top: 3rem;
 }
