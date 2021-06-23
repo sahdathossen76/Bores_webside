@@ -591,7 +591,12 @@ a {
           flex: 1 1 30%;
   text-align: end;
   padding-bottom: 2%;
-  padding-right: 10rem;
+}
+
+@media screen and (min-device-width: 787px) {
+  .traning__btn {
+    padding-right: 10rem;
+  }
 }
 
 .traning__btn-text {

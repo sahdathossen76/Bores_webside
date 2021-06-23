@@ -55,7 +55,10 @@
         flex: 1 1 30%;
         text-align: end;
         padding-bottom: 2%;
-        padding-right: 10rem;
+        @include computer_lg ($min-screen : 787px){
+            padding-right: 10rem;
+        }
+        
         &-text{
             background: none;
             font-size: 1.4rem;
