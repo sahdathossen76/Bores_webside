@@ -37,6 +37,9 @@
         justify-content: space-between;
         gap: 1.5rem;
     }
+    &__titles{
+        flex: 1 1 60%;
+    }
     &__title{
         @include heading-flex;
         h1{
@@ -47,6 +50,22 @@
     &__text{
         @include text;
         color: rgba($white,  0.8);
+    }
+    &__btn{
+        flex: 1 1 30%;
+        text-align: end;
+        padding-bottom: 2%;
+        padding-right: 10rem;
+        &-text{
+            background: none;
+            font-size: 1.4rem;
+            color:rgba($white, 0.9);
+            white-space: nowrap;
+            padding-right: 1.5rem;
+        }
+        &-img{
+            width: 3rem;  
+        }
     }
     &__table-wrapper{
         @include box-grid;
@@ -65,24 +84,17 @@
         justify-content: space-between;
         &--title
         {
+            flex: 1 1 45%;
             padding: 1rem;
             border-bottom: 0.1rem solid rgba($dark, 0.1);
             
         }
         &--btn{
+            flex: 1 1 40%;
             padding: 1rem;
         }
     }
-    &__btn{
-       padding-right: 2%;
-       
-        a{
-            background: none;
-            &:hover,&:focus{
-                background: none;
-            }
-        }
-    }
+    
 }
 .table{
     &--type{

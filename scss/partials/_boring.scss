@@ -7,6 +7,7 @@
     }
     &__title{
         @include heading-flex;
+        flex: 1 1 60%;
         h1{
             @include sub-heading;
         }
@@ -16,18 +17,22 @@
     }
     &__btn{
         padding-right: 2%;
-        
-         a{
-             background: none;
-             color: rgba($dark,  0.8);
-             &:hover,&:focus{
-                background: none;
-                color: rgba($dark,  0.8);
-            }
-             &::before{
-                background-image: url(../img/Group1191.png);
-            }
-         }
+        flex: 1 1 30%;
+        text-align: end;
+         
+        padding-bottom: 2%;
+        padding-right: 10rem;
+        &-text{
+            background: none;
+            font-size: 1.4rem;
+            color:rgba($dark, 0.9);
+            white-space: nowrap;
+            padding-right: 1.5rem;
+        }
+        &-img{
+            width: 3rem;
+            
+        }
      }
      &__cards{
          padding-top: 6rem;
